@@ -59,14 +59,19 @@ h1 {
 
 #password-box-el:hover {
     cursor: pointer;
+    background-color: rgb(80, 79, 124);
 }
+
+#password-box-el:active {
+    background-color: rgb(58, 57, 90);
+}
+
 
 #password-copied-el {
     /* color: rgb(35, 191, 110); */
     margin: 10px 0px 0px 0px;
     color: lightgrey;
 }
-
 
 #generate-password-btn-el {
     background-color: rgb(64, 171, 116);
@@ -83,11 +88,15 @@ h1 {
     background-color: rgb(80, 210, 143);
 }
 
+
 #generate-password-btn-el:active {
     background-color: rgb(52, 137, 93);
 }
 
 
-/* #length-display-el {
-    
-} */
+#settings-list label:active {
+    color: rgb(52, 137, 93);;
+}
+
+
+
