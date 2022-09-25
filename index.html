@@ -6,18 +6,60 @@
 </head>
 
 <body>
-    <h1>Generate a<br>
-    random password</h1>
-    <h3>Never use an insecure password again</h3>
-    
-    <ul id="settings-list">
-        <li><input type="checkbox" checked="true">Include numbers</li>
-        <li><input type="checkbox" checked="true">Include symbols</li>
-    </ul>
-    <button id="generate-password-el">Generate password</button>
-    <div>
-        <p id="password-el"></p>
+    <h1>Generate a</h1>
+    <h1 id="main-h1-el-green">random password</h1>
+    <p class="subhead">Never use an insecure password again.</p>
+    <div style="display:flex; align-items: center;">
+        <button id="generate-password-btn-el">Generate password</button>
+        <ul id="settings-list">
+            <li>
+                <label for="include-numbers-el">
+                    <input id="include-numbers-el" type="checkbox" checked="true">Include numbers
+                </label>
+            </li>
+            <li>
+                <label for="include-symbols-el">
+                    <input id="include-symbols-el" type="checkbox" checked="true">Include symbols
+                </label>
+            </li>
+            <!-- Styling doesn't work in styles.css, not sure why -->
+            <li id="length-display-el" style="margin-bottom: -5px; margin-top: 20px; color: lightgrey;">
+                Length: 
+            </li>
+            <li>
+                <label for="password-length-range-el">
+                    <input id="password-length-range-el" type="range" min="12" max="24" list="tickmarks">
+                    <!-- <datalist id="tickmarks" style="display: flex;">
+                        <option value="12" label="12"></option>
+                        <option value="13"></option>
+                        <option value="14"></option>
+                        <option value="14"></option>
+                        <option value="14"></option>
+                        <option value="14"></option>
+                        <option value="14"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"label="16"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                        <option value="19"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                        <option value="21"></option>
+                        <option value="22" label="20"></option>
+                    </datalist> -->
+                </label>
+            </li>
+        </ul>
     </div>
+    <div class="password-display">
+        <p id="password-box-el" hidden="true"></p>
+        <p id="password-copied-el" hidden="true">Copied to clipboard!</p>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

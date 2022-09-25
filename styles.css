@@ -3,13 +3,91 @@
 
 body {
     margin: 30px;
-    
+    background-color: rgb(41, 40, 64);
+    color: white;
+    font-family: sans-serif;
+    position: relative;
 }
 
+#main-h1-el-green {
+    margin-top: 0;
+    color: rgb(35, 191, 110);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.subhead {
+    margin-top: 15px;
+    margin-bottom: 65px;
+    font-size: 20px;
+}
+
+#settings-list {
+    margin-left: 20px;
+}
 
 #settings-list li {
     list-style: none;
     margin-left: -20px;
+    margin-top: 8px;
+    color: rgb(35, 191, 110);
+}
+
+#settings-list input:hover, label:hover {
+    cursor: pointer;
 }
 
 
+.password-display {
+    border-top: 1px solid grey;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#password-box-el {
+    margin-top: 40px;
+    background-color: rgb(59, 58, 92);
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: rgb(35, 191, 110);
+}
+
+#password-box-el:hover {
+    cursor: pointer;
+}
+
+#password-copied-el {
+    /* color: rgb(35, 191, 110); */
+    margin: 10px 0px 0px 0px;
+    color: lightgrey;
+}
+
+
+#generate-password-btn-el {
+    background-color: rgb(64, 171, 116);
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+#generate-password-btn-el:hover {
+    background-color: rgb(80, 210, 143);
+}
+
+#generate-password-btn-el:active {
+    background-color: rgb(52, 137, 93);
+}
+
+
+/* #length-display-el {
+    
+} */
